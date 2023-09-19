@@ -1,0 +1,26 @@
+.about {
+
+
+  &__container {
+    align-items: center;
+    justify-content: space-evenly !important;
+  }
+
+
+  &__text {
+    width: 50%;
+    color: var(--second-color);
+  }
+
+  &__subtitle {
+    margin-bottom: 1rem;
+  }
+
+  &__img {
+
+    img {
+      width: 300px;
+      border-radius: 10px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.footer {
+  padding: 2rem 0;
+  background-color: var(--second-color);
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__social {
+    a {
+      color: #fff;
+      width: 40px;
+      font-size: 16px;
+      line-height: 40px;
+      display: inline-block;
+      text-align: center;
+      margin-right: 8px;
+      background: rgba(255, 133, 83, 0.15);
+      border-radius: 5px;
+
+      &:hover {
+
+        i {
+          transform: scaleX(-1);
+          transition: all 500ms;
+        }
+      }
+    }
+    margin-bottom: 2rem;
+  }
+}

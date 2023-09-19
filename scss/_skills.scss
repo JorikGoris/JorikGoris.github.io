@@ -1,0 +1,63 @@
+.skills {
+
+
+  &__container {
+    align-items: center;
+    
+  }
+
+  &__left {
+    width: 50%;
+    margin-right: 1rem;
+  }
+
+  &__right {
+    width: 50%;
+    margin-left: 1rem;
+
+  }
+
+  &__icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: var(--primary-color);
+  }
+
+
+  &__data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 2rem;
+    padding: .5rem 1rem;
+    box-shadow: 0 4px 25px rgb(14 36 49 / 15%);
+    font-weight: 600;
+  }
+
+
+  &__progress {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: .25rem;
+    width: 0;
+    border-radius: .5rem;
+    background-color: var(--primary-color);
+    transition: all 4s;
+
+  }
+
+  &__img {
+    border-radius: 10px;
+  }
+
+  &__names {
+    color: var(--second-color);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+  }
+
+
+}

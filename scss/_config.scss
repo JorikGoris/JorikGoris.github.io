@@ -1,0 +1,79 @@
+
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+
+
+@keyframes reducetime {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: var(--hover-l);
+  }
+}
+
+@keyframes an {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes reveal {
+  from {
+    transform: translateY(9rem);
+  }
+  to {
+    transform: translateY(0rem);
+  }
+
+}
+
+@keyframes hasFocus {
+  from {
+    transform: scaleX(1.1) scaleY(1.3);
+  }
+  to {
+    transform: scale(1);
+
+  }
+}
+
+@keyframes reducetimeMb {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+
+@mixin media-xsm {
+  @media screen and (max-width: 480px) {
+    @content
+  }
+}
+
+@mixin media-sm {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+
+@mixin media-lg {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media screen and (max-width: 1600px) {
+    @content;
+  }
+}

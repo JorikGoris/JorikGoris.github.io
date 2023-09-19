@@ -1,0 +1,59 @@
+.menu-btn {
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+  display: none;
+  position: relative;
+  color: black;
+
+  @include transition-ease;
+
+  &__burger {
+    position: absolute;
+    width: 28px;
+    height: 3px;
+    background: black;
+    @include transition-ease;
+
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -8px;
+      width: 28px;
+      height: 3px;
+      background: black;
+      @include transition-ease;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 8px;
+      width: 20px;
+      height: 3px;
+      background: black;
+      @include transition-ease;
+    }
+
+    &.open {
+      transform: rotate(720deg);
+      background: transparent;
+
+
+      &::before {
+        transform: rotate(45deg) translate(5px, 8px);
+      }
+
+      &::after {
+        width: 28px;
+        transform: rotate(-45deg) translate(3px, -7px);
+
+      }
+    }
+
+  }
+}
+
+
+

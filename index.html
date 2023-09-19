@@ -1,9 +1,393 @@
-<!doctype html>
-<html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
-  <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-  </body>
-</html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="icon" type="image/png" href="img/Favicons/icons8-portfolio-ios-16-32.png">
+    <link rel="icon" type="image/png" href="img/Favicons/icons8-portfolio-ios-16-16.png">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.0/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css" integrity="sha512-ZpcaZ031fgI0ryEPFCdjUms80bt0oV453+GxoI0+Xa4rYj7FQRXy1Lsi7BSkvlpiJcq3iYdxZX5/oDHhj/uomw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Jorik Goris | Portfolio</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-4WY72X63NJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-4WY72X63NJ');
+    </script></head>
+<body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
+<header class="l-header">
+    <nav class="nav">
+        <a href="" class="nav__logo">Jorik</a>
+        <div class="nav__menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__item__link">
+                        <i class="bx bx-home nav__item__icon"></i>
+                        Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__item__link">
+                        <i class="bx bx-user nav__item__icon"></i>
+                        About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#skills" class="nav__item__link">
+                        <i class="bx bx-spreadsheet nav__item__icon"></i>
+                        Skill</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#qualification" class="nav__item__link">
+                        <i class="bx bx-award nav__item__icon "></i>
+                        Qualification</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#project" class="nav__item__link">
+                        <i class="bx bx-task nav__item__icon"></i>
+                        Project</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__item__link">
+                        <i class="bx bx-paper-plane nav__item__icon"></i>
+                        Contact</a>
+                </li>
+                 <li class="nav__item">
+                    <a href="cv/GorisJorik_CV.pdf" class="nav__item__link" target="_blank">
+                        <i class="bx bx-download nav__item__icon"></i>
+                       CV     
+                    </a>
+                </li> 
+            </ul>
+        </div>
+
+        <div class="menu-btn">
+            <span class="menu-btn__burger"></span>
+        </div>
+    </nav>
+</header>
+<main>
+
+    <div>
+        <section class="home content" id="home">
+            <div class="home__info">
+                <h1>Jorik Goris</h1>
+                <p>Student Systeem- en netwerkbeheer</p>
+                <a href="#contact" data-aos="fade-down" data-aos-delay="600" class="button aos-init aos-animate">Contact</a>
+            </div>
+            <div class="home__img">
+                <img src="img/Jorik.png" data-aos="fade-down" data-aos-delay="300" alt="figma" class="aos-init aos-animate" onContextMenu="return false">
+            </div>
+        </section>
+    </div>
+    <section class="about section" id="about">
+        <h2 class="section__title">About</h2>
+        <div class="about__container content">
+            <div class="about__img">
+                <img src="img/foto_jorik.jpg" data-aos="fade-down" data-aos-delay="300" alt="jorik" class="aos-init" onContextMenu="return false">
+            </div>
+            <div class="about__text aos-init" data-aos="fade-down" data-aos-delay="800">
+                <h2 class="about__subtitle">Jorik</h2>
+                <p data-aos="fade-down" data-aos-delay="600" class="aos-init">
+                    Hallo en welkom bij mijn portfolio! Ik ben Jorik, 19 jaar en een gedreven en gemotiveerde student die een opleiding volgt in Systeem- en Netwerkbeheer. Met een sterke interesse in netwerken, DevOps-tools, cybersecurity en Windows Server, streef ik ernaar om mijn kennis en vaardigheden op deze gebieden uit te breiden. </br></br> Mijn sterke punten liggen in mijn leergierigheid, motivatie en doorzettingsvermogen, die mij stimuleren om uitdagingen te overwinnen en succes te behalen.                </p>
+            </div>
+
+        </div>
+    </section>
+    <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <div class="skills__container content">
+            <div class="skills__left">
+                <h2>Professional Skills</h2>
+                <p>Hieronder vindt u mijn sterkste professionele vaardigheden
+                </p>
+                <br/>
+                <div class="skills__data aos-init" data-aos="fade-down" data-aos-delay="300">
+                    <div class="skills__names">
+                        <i class="fas fa-server skills__icon "></i> 
+                        <span class="skills__name">Infrastructuurbeheer</span>
+                    </div>
+                    <div class="skills__bar">
+                        <span class="skills__progress" data-progress="80" style="opacity: 0; width: 0px;"></span>
+                    </div>
+                    <div>
+                        <span class="skills__percentage">80%</span>
+                    </div>
+                </div>
+
+
+                <div class="skills__data aos-init" data-aos="fade-down" data-aos-delay="400">
+                    <div class="skills__names">
+                        <i class="fas fa-network-wired skills__icon"></i>
+                        <span class="skills__name">CCNA</span>
+                    </div>
+                    <div class="skills__bar">
+                        <span class="skills__progress" data-progress="75" style="opacity: 0; width: 0px;"></span>
+                    </div>
+                    <div>
+                        <span class="skills__percentage">75%</span>
+                    </div>
+                </div>
+                <div class="skills__data aos-init" data-aos="fade-down" data-aos-delay="500">
+                    <div class="skills__names">
+                        <i class="fas fa-users skills__icon"></i>
+                        <span class="skills__name">(Azure) Active Directory</span>
+                    </div>
+                    <div class="skills__bar">
+                        <span class="skills__progress" data-progress="75" style="opacity: 0; width: 0px;"></span>
+                    </div>
+                    <div>
+                        <span class="skills__percentage">75%</span>
+                    </div>
+                </div>
+                <div class="skills__data aos-init" data-aos="fade-down" data-aos-delay="600">
+                    <div class="skills__names">
+                        <i class="fas fa-infinity skills__icon"></i>
+                        <span class="skills__name">DevOps tools & automation</span>
+                    </div>
+                    <div class="skills__bar">
+                        <span class="skills__progress" data-progress="70" style="opacity: 0; width: 0px;"></span>
+                    </div>
+                    <div>
+                        <span class="skills__percentage">70%</span>
+                    </div>
+                </div>
+                <div class="skills__data aos-init" data-aos="fade-down" data-aos-delay="700">
+                    <div class="skills__names">
+                        <i class="fas fa-database skills__icon"></i>
+                        <span class="skills__name">SQL</span>
+                    </div>
+                    <div class="skills__bar">
+                        <span class="skills__progress" data-progress="65" style="opacity: 0; width: 0px;"></span>
+                    </div>
+                    <div>
+                        <span class="skills__percentage">65%</span>
+                    </div>
+                </div>
+                <div class="skills__data aos-init" data-aos="fade-down" data-aos-delay="700">
+                    <div class="skills__names">
+                        <i class="fa-solid fa-shield skills__icon"></i>
+                        <span class="skills__names">Cybersecurity</span>
+                    </div>
+                    <div class="skills__bar">
+                        <span class="skills__progress" data-progress="65" style="opacity: 0; width: 0px;"></span>
+                    </div>
+                    <div>
+                        <span class="skills__percentage">65%</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="skills__right">
+                <img src="img/work3.jpg" class="skills__img aos-init" alt="" data-aos="fade-down" data-aos-delay="200">
+            </div>
+        </div>
+    </section>
+
+    <section class="qualification section" id="qualification">
+        <h2 class="section__title">qualification </h2>
+        <div class="qualification__options">
+            <a class="option education-btn active">
+                <i class="bx bxs-graduation"></i>
+                Education
+            </a>
+            <a class="option work-btn">
+                <i class="bx bx-briefcase-alt-2"></i>
+                Work
+            </a>
+        </div>
+        <div class="qualification__container content">
+            <div class="education">
+                <div class="qualification__item left aos-init" data-aos="fade-down" data-aos-delay="200">
+                    <div class="qualification__img">
+                        <img src="img/logo_smg.png" alt="xplus" data-aos="fade-down" data-aos-delay="400" class="aos-init">
+                    </div>
+                    <div class="qualification__content aos-init" data-aos="fade-down" data-aos-delay="600">
+                        <span class="qualification__date">2019 - 2021</span>
+                        <h2>Sint Maria <small>| IT &amp; netwerken</small></h2>
+                        <p>Tijdens de laatste twee jaar van mijn secundair onderwijs heb ik ervoor gekozen IT &amp; netwerken te studeren op Sint Maria in Geel. Hier heb ik de basis van netwerken geleerd, alsook het werken met Windows Server, HTML en CSS, programmeren in C# en SQL. 
+                        </p>
+                    </div>
+                </div>
+                <div class="qualification__position aos-init" data-aos="fade-down" data-aos-delay="200">
+                    <div class="qualification__item right">
+                        <div class="qualification__img">
+                            <img src="img/thomas-more-logo.png" alt="thomas-more-logo" data-aos="fade-down" data-aos-delay="400" class="aos-init">
+                        </div>
+                        <div class="qualification__content aos-init" data-aos="fade-down" data-aos-delay="600">
+                            <span class="qualification__date">2021 - heden</span>
+                            <h2>Thomas More <small>| Systeem- en netwerkbeheer</small></h2>
+                            <p>Tijdens mijn opleiding bij Thomas More als systeem- en netwerkbeheerder heb ik mij verder verdiept in het netwerkbeheer via CCNA 1, 2 en 3.<br></br> Ook heb ik mijn kennis rond Windows Server verder uitgebreid alsook kennis gemaakt met zaken als scripting in Python en PowerShell, Windows deployment met MSCCM en Intune, gebruik gemaakt van verschillende DevOps technologieën waaronder AWS, Terraform, Ansible, Prometheus, Grafana en versiebeheer met Git. <br></br> Ook heb ik hier kennis kunnen maken met cybersecurity, wat mogelijks een volgende stap in mijn carrière kan zijn.  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work hidden">
+                <div class="qualification__item left aos-init" data-aos="fade-down" data-aos-delay="200">
+                    <div class="qualification__img aos-init">
+                        <img src="img/SCCA.png" alt="logoSCCA" data-aos="fade-down" data-aos-delay="400" class="aos-init">
+                    </div>
+                    <div class="qualification__content aos-init" data-aos="fade-down" data-aos-delay="600">
+                        <span class="qualification__date">feb. 2021</span>
+                        <h2>Sint-Clara College Arendonk <small>| Stage</small></h2>
+                        <p>Tijdens mijn studie IT &amp; netwerken heb ik de kans gekregen stage te lopen bij het Sint-Clara College te Arendonk. Hier heb ik de functie van helpdesk uitgevoerd, alsook het bouwen van een nieuwe website voor de kleuterschool. <br></br> Deze kan u onderaan mijn portfolio raadplegen.
+                        </p>
+                    </div>
+                </div>
+                <div class="qualification__position right aos-init" data-aos="fade-down" data-aos-delay="200">
+                    <div class="qualification__item right aos-init">
+                        <div class="qualification__img">
+                            <img src="img/DriezenIT.png" alt="logoSCCA" data-aos="fade-down" data-aos-delay="400" class="aos-init">
+                        </div>
+                        <div class="qualification__content aos-init" data-aos="fade-down" data-aos-delay="600">
+                            <span class="qualification__date">2020 - 2022</span>
+                            <h2>DriezenIT <small>| Bekabelingswerken & wifiinstallaties</small></h2>
+                            <p>Bij DriezenIT heb ik samen met de senior networkengineer in scholen door heel vlaanderen bekabelingswerken en wifiinstallaties uitgevoerd gebruik makend van de producten van Cisco Meraki. Hier heb ik erg veel handson ervaring opgedaan. <br> </br> Ook ben ik betrokken geweest bij het voorzien van een gehele Cisco beveiligingscamera installatie bij Sempre Life BV, die beschikt over één van de grotere volledige Cisco Meraki installaties in de Benelux.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="qualification__position left aos-init" data-aos="fade-down" data-aos-delay="200">
+                    <div class="qualification__item aos-init">
+                        <div class="qualification__img">
+                            <img src="img/SCCA.png" alt="logoSCCA" data-aos="fade-down" data-aos-delay="400" class="aos-init">
+                        </div>
+                        <div class="qualification__content aos-init" data-aos="fade-down" data-aos-delay="600">
+                            <span class="qualification__date">juli 2022 - augustus 2022</span>
+                            <h2>Sint-Clara College Arendonk <small>| Vakantiewerk infrastructuurbeheer</small></h2>
+                            <p>Tijdens de zomervakantie heb ik de kans gekregen bij het Sint-Clara College, mijn voormalige stageplek vakantiewerk te doen. Hier heb ik samen met Nick infrastructuuronderhoud gedaan, waaronder het opschonen en redesignen van enkele networkracks.  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="qualification__position right aos-init" data-aos="fade-down" data-aos-delay="200">
+                    <div class="qualification__item right aos-init">
+                        <div class="qualification__img">
+                            <img src="img/logoBMI.png" alt="logoBMI" data-aos="fade-down" data-aos-delay="400" class="aos-init">
+                        </div>
+                        <div class="qualification__content aos-init" data-aos="fade-down" data-aos-delay="600">
+                            <span class="qualification__date">feb. 2023 - juni 2023</span>
+                            <h2>B&MI Leisure <small>| Traineeship</small></h2>
+                            <p>Om mijn opleiding systeem- en netwerkbeheer bij Thomas More af te sluiten heb ik een 14 week lange periode werkplekleren uitgevoerd bij BMI Leisure. </br></br> BMI is een SAAS Scale-UP in de FEC sector. Hier heb ik de functie van systeembeheerder en DevOps engineer op mij genomen. Hier heb ik de infrastructuur onderhouden alsook vernieuwd, en gewerkt met Azure AD, Intune, GSuite, Grafana, Prometheus etc.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="project section" id="project">
+        <h2 class="section__title">Project</h2>
+        <div class="project__container content">
+            <div class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+                <div class="swiper-wrapper" id="swiper-wrapper-b210e3698d10d5f98b" aria-live="polite">
+                    <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 4" style="width: 940px;">
+                        <div class="project__item">
+                            <div class="project__img first-img aos-init" data-aos="fade-down" data-aos-delay="200"></div>
+                            <div class="project__title aos-init" data-aos="fade-down" data-aos-delay="400">
+                                <h2>Website BASCA</h2>
+                                <p>Wordpress website voor BASCA.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" role="group" aria-label="4 / 4" style="width: 940px;">
+                        <div class="project__item">
+                            <div class="project__img fourth_img aos-init" data-aos="fade-down" data-aos-delay="200"></div>
+                            <div class="project__title aos-init" data-aos="fade-down" data-aos-delay="400">
+                                <h2>Grafana &amp; Prometheus </h2>
+                                <p>Monitoring en alerting systeem van wereldwijde webservers met Grafana &amp; Prometheus, gebouwd op Proxmox. </br> Monitoren van system metrics & IIS applications</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 4" style="width: 940px;">
+                        <div class="project__item">
+                            <div class="project__img second_img aos-init" data-aos="fade-down" data-aos-delay="200"></div>
+                            <div class="project__title aos-init" data-aos="fade-down" data-aos-delay="400">
+                                <h2>Connecting &amp; securing networks</h2>
+                                <p>Project connecting &amp; securing networks. Bouwen van een WAN. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" role="group" aria-label="3 / 4" style="width: 940px;">
+                        <div class="project__item">
+                            <div class="project__img third_img aos-init" data-aos="fade-down" data-aos-delay="200"></div>
+                            <div class="project__title aos-init" data-aos="fade-down" data-aos-delay="400">
+                                <h2>DevOps</h2>
+                                <p>Volledig automatische deployment van een stack van selfhosted tools met AWS, bash, TerraForm en Ansible. </p>
+                            </div>
+                        </div>
+                    </div>
+ 
+
+                </div>
+                <div class="swiper-pagination swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+                <div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-b210e3698d10d5f98b" aria-disabled="true"></div>
+                <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-b210e3698d10d5f98b" aria-disabled="false"></div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+        </div>
+    </section>
+
+    <section class="contact section" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <div class="contact__container content">
+            <form action="mailto:jorikgoris@gmeail.com" method="POST" enctype="text/plain" class="contact__form">
+                <div class="wrap__input aos-init" data-aos="fade-down" data-aos-delay="300">
+                    <label class="wrap__input__label" for="name">
+                        <i class="bx bx-user"></i>
+                    </label>
+                    <div style="position: relative">
+                        <input class="wrap__input__field" type="text" id="name" name="name" placeholder="Full name" required="">
+                        <span class="wrap__input__focus"></span>
+                    </div>
+                    <small class="alert">You cannot leave this field empty.</small>
+                </div>
+                <div class="wrap__input aos-init" data-aos="fade-down" data-aos-delay="400">
+                    <label class="wrap__input__label" for="email">
+                        <i class="bx bx-envelope"></i>
+                    </label>
+                    <div style="position: relative">
+                        <input class="wrap__input__field" type="email" id="email" name="email" placeholder="Eg. example@email.com" required="">
+                        <span class="wrap__input__focus"></span>
+                    </div>
+                    <small class="alert">You cannot leave this field empty.</small>
+                </div>
+                <div class="wrap__input aos-init" data-aos="fade-down" data-aos-delay="500">
+                    <label class="wrap__input__label" for="message">
+                        <i class="bx bx-message-rounded"></i>
+                    </label>
+                    <div style="position: relative">
+                        <textarea class="wrap__input__field" maxlength="480px" id="message" name="message" placeholder="Your message" required=""></textarea>
+                        <span class="wrap__input__focus"></span>
+                    </div>
+                    <small class="alert">Please write a message.</small>
+                </div>
+                <div class="wrap__submit">
+                    <input type="submit" class="wrap__submit__btn" value="Send">
+                </div>
+            </form>
+        </div>
+    </section>
+    <div class="modal">
+        <span class="close">×</span>
+        <img src="" class="modal__img" alt="modal">
+    </div>
+</main>
+<footer class="footer">
+    <p class="footer__title">Jorik Goris</p>
+    <div class="footer__social">
+        <a href="https://www.linkedin.com/in/jorik-goris-452979214/"><i class="bx bxl-linkedin-square"></i></a>
+        <a href="#"><i class="bx bxl-instagram"></i></a>
+        <a href="mailto:jorikgoris@gmail.com"><i class="bx bx-at"></i></a>
+    </div>
+    <p>
+        Copyright &copy; <script>document.write(new Date().getFullYear())</script> Jorik Goris All Rights Reserved
+    </p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js" integrity="sha512-BABFxitBmYt44N6n1NIJkGOsNaVaCs/GpaJwDktrfkWIBFnMD6p5l9m+Kc/4SLJSJ4mYf+cstX98NYrsG/M9ag==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+<script src="js/main.js"></script>
+
+</body></html>

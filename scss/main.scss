@@ -1,0 +1,105 @@
+@import "config", "nav", "menu", "home", "about", "skills","qualification", "project", "contact", "footer", "responsive";
+@import "modal";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+#hero__img {
+  background-image: url("../img/foto_jorik.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 400px
+}
+
+
+:root {
+  --primary-color: #4070F4;
+  --second-color: #0E2431;
+  --hover-l: 80%;
+  --big-font: 2.5rem;
+  --h2-font-size: 2rem;
+  --white: #fff;
+}
+
+body {
+
+  color: var(--second-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+
+.content {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.button {
+  background-color: var(--primary-color);
+  padding: .75rem 2.5rem;
+  border-radius: 10px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+}
+
+.section {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+
+  &__title {
+    position: relative;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: var(--h2-font-size);
+    margin-top: 16px;
+    margin-bottom: 48px;
+
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 3px;
+      width: 80px;
+      margin: 0 auto;
+      top: 47px;
+      left: 0;
+      right: 0;
+      background-color: var(--primary-color);
+
+
+    }
+  }
+}
+
+
+.custom-shape-divider-bottom-1629399352 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1629399352 svg {
+  position: relative;
+  display: block;
+  width: calc(113% + 1.3px);
+  height: 283px;
+}
+
+.custom-shape-divider-bottom-1629399352 .shape-fill {
+  fill: #FFFFFF;
+}
